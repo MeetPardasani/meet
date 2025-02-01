@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - Home</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background: #222;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Banner */
+        .banner {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Categories */
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .category {
+            background: #fff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+
+        .category img {
+            width: 100%;
+            height: 150px;
+            border-radius: 5px;
+        }
+
+        .category a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #222;
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .product {
+            background: #fff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: 200px;
+            border-radius: 5px;
+        }
+
+        .product h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .add-to-cart {
+            background: #ff6600;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .add-to-cart:hover {
+            background: #ff4500;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Online Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="checkout.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Image -->
+    <img src="https://source.unsplash.com/1200x400/?shopping,ecommerce" alt="E-commerce Banner" class="banner">
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="category">
+            <img src="https://source.unsplash.com/200x150/?smartphone,mobile" alt="Mobiles">
+            <a href="electronics.html">Mobiles</a>
+        </div>
+        <div class="category">
+            <img src="https://source.unsplash.com/200x150/?tv,smarttv" alt="TVs">
+            <a href="electronics.html">TVs</a>
+        </div>
+        <div class="category">
+            <img src="https://source.unsplash.com/200x150/?clothing,fashion" alt="Clothing">
+            <a href="#">Clothing</a>
+        </div>
+        <div class="category">
+            <img src="https://source.unsplash.com/200x150/?accessories,shopping" alt="Accessories">
+            <a href="#">Accessories</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="product-grid">
+        <div class="product">
+            <img src="https://source.unsplash.com/300x200/?smartphone,mobile" alt="Smartphone">
+            <h2>Smartphone XYZ</h2>
+            <p>$499.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://source.unsplash.com/300x200/?iphone,smartphone" alt="iPhone">
+            <h2>iPhone 13</h2>
+            <p>$899.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://source.unsplash.com/300x200/?samsung,mobile" alt="Samsung Galaxy">
+            <h2>Samsung Galaxy S22</h2>
+            <p>$799.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://source.unsplash.com/300x200/?tv,smarttv" alt="Smart TV">
+            <h2>Smart TV 55"</h2>
+            <p>$599.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Online Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
